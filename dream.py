@@ -5,6 +5,7 @@ from keras import backend as K
 
 import scipy
 from keras.preprocessing import image
+import imageio
 
 #画像サイズを変更する関数
 def resize_img(img, size):
@@ -18,7 +19,8 @@ def resize_img(img, size):
 #画像を保存する関数
 def save_img(img, fname):
     pil_img = deprocess_image(np.copy(img))
-    scipy.misc.imsave(fname, pil_img)
+    #scipy.misc.imsave(fname, pil_img)
+    imageio.imwrite(fname, pil_img)
 
 #画像を開いてサイズ変更し、InceptionV3が処理できるテンソルに変換する関数
 def preprocess_image(image_path):
