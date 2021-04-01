@@ -1,5 +1,5 @@
 #!/bin/bash
-
+apt-get update
 apt-get install liblapack-dev
 apt-get install gfortran
 pip install keras==2.0.8 || exit 1
