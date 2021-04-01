@@ -1,6 +1,10 @@
 from keras.applications import inception_v3
 from keras import backend as K
+import os
 
+#--0.1 保存するディレクトリの作成
+output_dir = "./output"
+os.makedirs(output_dir, exist_ok=True)
 #--0 補助関数の作成
 
 import scipy
