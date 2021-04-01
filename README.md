@@ -7,8 +7,10 @@ input/ DeepDreamで変換したい画像を置く
 NOTE.md  メモ書き  
 README.md ここ  
 dream.py 実行されるプログラム  
-setup.sh 利用するライブラリを記述  
 requirements.txt 利用されたライブラリを記述  
+setup.sh 利用するライブラリを記述  
+sinclude.sh enrootで利用するコンテナイメージを指定するファイル
+
   
 # 使い方  
 setup.shを実行して環境を作る  
