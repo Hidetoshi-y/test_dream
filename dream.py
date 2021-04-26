@@ -178,7 +178,3 @@ for shape in successive_shapes:
     save_img(img, fname='./output/dream_at_scale_' + str(shape) + '.png')
 
 save_img(img, fname='./output/final_dream.png')
-
-#コンテナに編集が反映させるかの確認
-git config --global user.email "sky11fur@gmail.com"
-git config --global user.name "yoshida"
